@@ -1,6 +1,9 @@
 # WSO2-ESB-CICD
 Project which contains code to implements a CICD process for WSO2 ESB/EI
 
+# The Process
+![alt text] (https://github.com/chanakaudaya/WSO2-ESB-CICD/blob/master/cicd-process.png)
+
 # Prerequisites
 These artefacts and scripts are written to test in a local setup which has 2 WSO2 EI nodes running locally with port offset 0 and 2. You should have those instances running to test these scripts.
 
@@ -36,3 +39,4 @@ sh deploy.sh
 * Test the staging environment
 * Deploy to production environment
 * Test the production environment
+
