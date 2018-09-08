@@ -1,0 +1,45 @@
+{
+	"id": "fc3a3128-d79d-131d-4e27-c9c6f1da1457",
+	"name": "WSO2_API_STORE_TESTS",
+	"description": "",
+	"order": [
+		"e60829d7-7ace-3a92-94e4-ebf391d3c417"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1521612852681,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "e60829d7-7ace-3a92-94e4-ebf391d3c417",
+			"url": "{{serverURL}}/services/HelloProxy",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "var responseJSON = JSON.parse(responseBody);\ntests[\"Status code is 200\"] = responseCode.code === 200;\ntests[\"Response message contains Hello from WSO2 ESB CI/CD Example\"] = responseJSON.message === \"Hello from WSO2 ESB CI/CD Example\";\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521702009027,
+			"name": "Hello Proxy - POST",
+			"description": "",
+			"collectionId": "fc3a3128-d79d-131d-4e27-c9c6f1da1457",
+			"responses": [],
+			"rawModeData": "{\n  \"validityTime\": \"3600\",\n  \"keyType\": \"PRODUCTION\",\n  \"accessAllowDomains\": [\"ALL\"]\n}"
+		}
+	]
+}

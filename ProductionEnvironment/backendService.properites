@@ -1,0 +1,5 @@
+SERVER_URL=https://integration.cloud.wso2.com
+APPLICATION_NAME=HelloService
+APPLICATION_VERSION=1.0.0
+DEPLOYABLE_ARTIFACT_NAME=Hello-Service-0.1-SNAPSHOT.jar
+DEPLOYABLE_ARTIFACT_PATH=/home/travis/build/chanakaudaya/API-Management-CI-CD-Example/BackendServiceImpl/Hello-Service/target
