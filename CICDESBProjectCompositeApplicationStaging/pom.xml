@@ -108,7 +108,7 @@
         <configuration>
           <carbonServers>
             <CarbonServer>
-              <trustStorePath>/Users/chanaka/my-contributions/WSO2-ESB-CICD/src/main/resources/security/wso2carbon.jks</trustStorePath>
+              <trustStorePath>${basedir}/src/main/resources/security/wso2carbon.jks</trustStorePath>
               <trustStorePassword>wso2carbon</trustStorePassword>
               <trustStoreType>JKS</trustStoreType>
               <serverUrl>https://localhost:9445</serverUrl>
