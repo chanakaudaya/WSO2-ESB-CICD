@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean install -am CICDESBProjectCompositeApplicationProduction CICDESBProjectCompositeApplicationStaging'
+                sh 'mvn -am -pl CICDESBProjectCompositeApplicationProduction,CICDESBProjectCompositeApplicationStaging clean install'
             }
         }
         stage('Deploy-Staging') {
