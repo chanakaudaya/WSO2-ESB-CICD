@@ -24,8 +24,8 @@ elif [[ $1 == "production" ]]; then
 	newman run TestAPI/WSO2_API_STORE_TESTS.postman_collection.json -e ProductionEnvironment/Production.postman_environment.json --bail
 	echo "Tests are completed for $1 environment"
 else
-        echo "Starting to deploy into Staging"
-        cd ./CICDESBProjectCompositeApplicationStaging
+	echo "Starting to deploy into Staging"
+	cd ./CICDESBProjectCompositeApplicationStaging
 	mvn clean deploy -Dmaven.deploy.skip=true -Dmaven.car.deploy.skip=false
 	echo "Deploying the artefacts"
 	sleep 10
