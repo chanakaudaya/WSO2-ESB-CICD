@@ -5,7 +5,7 @@ mvn clean install -q
 #Deploy them into servers
 if [[ $1 == "staging" ]]; then
 	echo "Starting to deploy into Staging"
-        cd ./CICDESBProjectCompositeApplicationStaging
+    cd ./CICDESBProjectCompositeApplicationStaging
 	mvn clean deploy -Dmaven.deploy.skip=true -Dmaven.car.deploy.skip=false
 	echo "Deploying the artefacts"
 	sleep 10

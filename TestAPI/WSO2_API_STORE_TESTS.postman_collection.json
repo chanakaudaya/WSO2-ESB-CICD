@@ -13,7 +13,7 @@
 	"requests": [
 		{
 			"id": "e60829d7-7ace-3a92-94e4-ebf391d3c417",
-			"url": "{{serverURL}}/services/HelloProxy",
+			"url": "{{serverURL}}services/HelloProxy",
 			"headers": "Content-Type: application/json\n",
 			"headerData": [
 				{
